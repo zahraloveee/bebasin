@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Objek Select</title>
+</head>
+<body>
+<script type="text/javascript">
+function tekan() {
+var streamstr = document.fform.stream.value;
+document.fform.pstream.value = streamstr;
+}
+</script>
+<form name="fform"> 
+ 
+ 
+<h1>Objek Select</h1>
+<hr>
+<h3>Masukkan :</h3>
+Stream (peminatan) yang akan dipilih:
+<select name="stream" size="1">
+<option value="Teknik dan Sistem Industri">Teknik dan Sistem
+Industri</option>
+<option value="Teknologi Proses">Teknologi Proses</option>
+<option value="Bioindustri">Bioindustri</option>
+<option value="Pengawasan Mutu">Pengawasan Mutu</option>
+<option value="Teknologi Pengemasan">Teknologi 
+Pengemasan</option>
+<option value="Teknik dan Manajemen Lingkungan">Teknik dan 
+Manajemen
+Lingkungan</option>
+<option value="Bisnis dan Aplikasi Industri">Bisnis dan Aplikasi
+Industri</option>
+</select>
+<p>
+<input type="button" value="Kirim" onclick="tekan()">
+<input type="reset" value="Ulang">
+</p>
+<h3>Output Stream :</h3>
+<input type="text" name="pstream" size="30">
+</form>
+</body> 
+ 
+</html>
